@@ -1,4 +1,10 @@
 /* sidebar */
+.section .col-2{
+	border-left-width: 6px ;
+	border-color: #0083CA;
+	border-left-style: solid;
+}
+
 .logo img{
     margin-top: 32px;
     margin-left: 39px;
@@ -29,7 +35,7 @@
 
 }
 
-#side-nav button{
+#side-nav a{
 	font-family: 'silkasemibold';
 	font-size: 14px;
 	color: #9a9b9f;
@@ -39,7 +45,7 @@
 	font-family: 'silkamedium';
 	font-size: 10px;
 	color: #9a9b9f;
-	padding-left: 31%;
+	padding-left: 23%;
 
 }
 
@@ -55,6 +61,8 @@
 /* tutup Sidebar */
 	
 /* filter */
+
+
 
 .batas{
     border: 0.8px solid #0083CA;
@@ -92,10 +100,31 @@
     color: #0083ca; 
   }
 
+.uncheck {
+    background-color: transparent;
+    border: none;
+    color: #0083CA;
+}
+
   /* dropdown accordion */
   .filter-head{
 	  width: 210px;
   }
+
+.accordion .card-header:after { 
+    font-family: 'FontAwesome';  
+    content: "\f106";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    
+    content: "\f107";
+    
+}
+
+
+
 
   .card{
 	background-color: #E9F0F0;
@@ -106,7 +135,7 @@
 	height: 16px;
 	font-family: 'silkamedium';
 	font-size: 12px;
-	color: #707070;  
+	color: #707070 !important;  
   }
 
   .card-header {
