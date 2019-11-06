@@ -485,3 +485,40 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 /* tutup tabel */
 
+
+
+/* profil penelitian & peningkatan*/
+/* kolom ke 2 */
+.p-info h6{ 
+	font-family: 'silkamedium';
+	font-size: 10px;
+	color: #707070;
+	margin-left: 28px;
+	margin-top: 20px;
+}
+
+.p-info h5{
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 1.25;
+	color: #0083ca;
+	margin-left: 28px;
+}
+
+/* tutup profil penelitian */
+
+/* inventaris */
+.btn-danger{
+	margin-left: 28px;
+	border-radius: 25px;
+	width: 200px;
+	margin-top: 20px;
+	font-family: 'silkasemibold';
+	font-size: 12px;
+	line-height: 1.25;
+	letter-spacing: 0.24px;
+
+
+}
+
+/* inventaris */
