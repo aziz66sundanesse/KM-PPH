@@ -522,3 +522,151 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 /* inventaris */
+
+
+/* detail staff */
+.d-staff-section{
+	background-color: #e9f0f0;
+}
+
+.d-staff-section .judul,
+.img-staff, 
+.data-staff,
+.d-staff-pendidikan
+{
+	margin-left: 21px;
+}
+
+.d-staff-section .judul{
+	margin-top: 37px;
+    margin-left: 28px;
+    margin-bottom: 55px;
+}
+
+.d-staff-section h3{
+	font-family: 'silkabold';
+	font-size: 16px;
+	color: #0083ca;
+}
+
+.data-staff{
+	margin-top: 30px;
+	margin-right: 20px;
+	border-radius: 10px;
+	background-color: #f5fbfd;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 13px;
+	padding-right: 13px;
+
+}
+
+.img-staff{
+	width: 90px;
+	height: 90px;
+	border-radius: 20px;
+}
+
+.media-body h3{
+	font-family: 'silkabold';
+	font-size: 20px;
+	color: #0083ca;
+	padding-bottom: 5px;
+}
+
+.media-body h4{
+	font-family: 'silkasemibold';
+	font-size: 11px;
+	color: #707070;
+}
+
+.media-body h4 span{
+	font-family: 'silkasemibold';
+	font-size: 11px;
+	color: #0083ca;
+}
+
+.data-staff h4{
+	font-family: 'silkabold';
+	font-size: 12px;
+	color: #0083ca;
+}
+
+.data-staff h6{
+	font-family: 'silkamedium';
+	font-size: 10px;
+	color: #707070;
+	margin-top: 13px;
+}
+
+.data-staff h5{
+	font-family: 'Open Sans';
+	font-size: 12px;
+	color: #0083ca;
+}
+
+.d-staff-pendidikan{
+	margin-top: 20px;
+	margin-right: 20px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 10px;
+	background-color: #f5fbfd;
+}
+
+.d-staff-pendidikan h4{
+	font-family: 'silkabold';
+	font-size: 12px;
+	line-height: 1.25;
+	color: #0083ca;
+}
+
+.d-staff-pendidikan h6{
+	font-family: 'silkamedium';
+	font-size: 10px;
+	color: #707070;
+}
+
+.d-staff-pendidikan h5{
+	font-family: 'Open Sans';
+	font-size: 12px;;
+	line-height: 1.5;
+	color: #0083ca;
+}
+
+/* tab detai staff */
+
+.tab-link {
+    color: #9a9b9f;
+}
+
+.nav-item {
+	padding-right: 14px;
+	font-family: 'silkasemibold';
+	color:#9a9b9f ;
+}
+
+.nav-item a {
+	color:#9a9b9f ;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.nav-pills .nav-link {
+	font-size: 10px;
+	border-radius: 30px;
+    width: 150px;
+    text-align: center;
+	border: solid 1px #d3d3d3;
+	background-color: #F5FBFD;
+}
+
+
+/* tutup tab detai staff */
+
+/* tutup detail staff */
