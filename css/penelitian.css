@@ -670,3 +670,109 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 /* tutup tab detai staff */
 
 /* tutup detail staff */
+
+
+/* evaluasi */
+.evaluasi-filter h6{
+	font-family: 'silkamedium';
+	font-size: 12px;
+	color: #707070;
+	margin-left: 24px;
+	margin-top: 20px;
+}
+
+.evaluasi-filter option{
+	font-family: 'silkaregular';
+	font-size: 10px;
+	color: #9a9b9f;
+	margin-left: 24px;
+
+}
+
+.evaluasi-filter select{
+	margin-left:24px;
+	/* margin-right: 24px; */
+}
+
+.evaluasi-filter .form-control{
+	font-family: 'silkaregular';
+	font-size: 10px;
+	color: #9a9b9f;
+	width: 200px;
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+
+.evaluasi-komentar textarea{
+	font-family: 'silkamedium';
+	font-size: 10px;
+	color: #707070;
+	background-color: #ffffff;
+	margin-left: 24px;
+	margin-top: 20px;
+	padding-left: 24px;
+	width: 80%;
+}
+
+.evaluasi-komentar .submit-komentar{
+	width: 43px;
+}
+
+.evaluasi-komentar button{
+	margin-right: 6%;
+}
+
+.evaluasi-komentar .form-group{
+	margin-bottom: 0 !important;
+}
+
+/* tutup evaluasi */
+
+
+
+
+/* pelaporan organisasi */
+.kepuasan-kerja {
+	border-radius: 10px;
+	background-color: #f5fbfd;
+	margin-top: 20px;
+	padding: 13px;
+	margin-left: 24px;
+
+}
+
+.kepuasan-kerja h5{
+	font-family: 'silkamedium';
+	font-size: 12px;
+	line-height: 1.25;
+	letter-spacing: 0.24px;
+	color: #0083ca;
+}
+
+.kepuasan-kerja h6{
+	font-family: 'silkaregular';
+	font-size: 10px;
+	color: #707070;
+}
+
+.kepuasan-kerja .progress{
+	margin-bottom: 15px;
+}
+
+.kepuasan-kerja .btn-danger{
+	margin-left:0px !important;
+}
+
+.jumlah-kegiatan{
+	/* margin-left: 180px; */
+	padding-top: 5px;
+	font-family: 'silkamedium';
+	font-size: 12px;
+	color: #707070;
+	text-align: right;
+	position: absolute;
+  right: 20px;
+}
+
+
+/* tutup pelaporan organisasi */
