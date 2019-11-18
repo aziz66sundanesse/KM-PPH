@@ -4,6 +4,11 @@
     padding-top: 42px;
 }
 
+/* alert */
+.alert-user{
+    margin-top: 10px;
+}
+
 /* login */
 .login{
     margin-top: 5%;

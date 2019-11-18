@@ -1,3 +1,5 @@
+
+
 /* sidebar */
 .section .col-2{
 	border-left-width: 6px ;
@@ -16,6 +18,7 @@
 #side-nav{
 	margin-top: 50px ;
 	background-color: white;
+	height: 100vh;
 }
 
 #side-nav .card .card-header {

@@ -806,7 +806,19 @@
                       <td>2011/01/25</td>
                       <td>$112,000</td>
                   </tr>
-              </tbody>   
+              </tbody>
+              <!-- filter per coloumn -->
+              <tfoot>
+                  <tr>
+                      <th>Judul Kegiatan</th>
+                      <th>Jenis Kegiatan</th>
+                      <th>Kategori</th>
+                      <th>Tahun Mulai</th>
+                      <th>Tahun Selesai</th>
+                      <th>sumber Dana</th>
+                  </tr>
+              </tfoot>   
+              <!-- tutup filter per coloumn -->
           </table>
           </div>
         </div>
@@ -821,8 +833,32 @@
     
     <!-- plugin datatables -->
     <script>
+        // $(document).ready(function() {
+        //     $('#penelitian').DataTable();
+        // } );
         $(document).ready(function() {
-            $('#penelitian').DataTable();
+            $('#penelitian').DataTable( {
+                initComplete: function () {
+                    this.api().columns().every( function () {
+                        var column = this;
+                        var select = $('<select><option value=""></option></select>')
+                            .appendTo( $(column.footer()).empty() )
+                            .on( 'change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex(
+                                    $(this).val()
+                                );
+        
+                                column
+                                    .search( val ? '^'+val+'$' : '', true, false )
+                                    .draw();
+                            } );
+        
+                        column.data().unique().sort().each( function ( d, j ) {
+                            select.append( '<option value="'+d+'">'+d+'</option>' )
+                        } );
+                    } );
+                }
+            } );
         } );
       </script>
       <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
