@@ -729,6 +729,23 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 	margin-bottom: 0 !important;
 }
 
+.table-evaluasi-komentar button{
+	margin-top: -50px;
+}
+
+.table-evaluasi-komentar img{
+	width: 40px;
+
+}
+
+.table-evaluasi-komentar textarea {
+	font-family: 'silkamedium';
+	font-size: 10px;
+	color: #707070;
+}
+
+
+
 /* tutup evaluasi */
 
 
