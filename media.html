@@ -220,7 +220,17 @@
                   <div id="collapseSatu" class="card-body collapse" data-parent="#accordion" >
                     <div class="form-check">
                       <label>
-                        <input type="checkbox" name="check" checked> <span class="label-text">Option 01</span>
+                        <input  type="checkbox" id="report" name="kategori" value="Report" > <span class="label-text">Report</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label>
+                        <input id="SOP" type="checkbox" name="kategori" value="SOP"> <span class="label-text">SOP</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label>
+                        <input id="tempalte" type="checkbox" name="kategori" value="Template" > <span class="label-text">Template</span>
                       </label>
                     </div>
                   </div>
@@ -254,31 +264,31 @@
               </button>
             </div>
 
-            <table id="penelitian" class="table table-striped radius-tabel" style="width:100%">
+            <table id="media" class="table table-striped radius-tabel" style="width:100%">
               <thead>
                   <tr>
-                      <th>Divisi</th>
-                      <th>Nama Surat</th>
-                      <th>Tujuan</th>
-                      <th>Email</th>
+                      <th>Judul</th>
+                      <th>Kategori</th>
+                      <th>Sumber</th>
+                      <th>Tahun</th>
                   </tr>
               </thead>
               <tbody>
                   <tr>
                       <td class="tbl-keg" >Tiger Nixon</td>
-                      <td>System Architect</td>
+                      <td>Report</td>
                       <td>Edinburgh</td>
                       <td>61</td>                      
                   </tr>
                   <tr>
                       <td class="tbl-keg">Garrett Winters</td>
-                      <td>Accountant</td>
+                      <td>SOP</td>
                       <td>Tokyo</td>
                       <td>63</td>                      
                   </tr>
                   <tr>
                       <td class="tbl-keg">Ashton Cox</td>
-                      <td>Junior Technical Author</td>
+                      <td>Template</td>
                       <td>San Francisco</td>
                       <td>66</td>                      
                   </tr>
@@ -621,14 +631,35 @@
     
     <!-- plugin datatables -->
     <script>
-        $(document).ready(function() {
-            $('#penelitian').DataTable();
-        } );
-      </script>
+      $(document).ready(function() {
+          $('#penelitian').DataTable();
+      } );
+
+      // deklarasi untuk checkbox
+     $(document).ready(function(){
+       var tabel = $('#media').DataTable();
+
+       $('input:checkbox').on('change',function(){
+         var kategori = $('input:checkbox[name="kategori"]:checked').map(function(){
+          return '^' + this.value +'$';
+         }).get().join('|');
+
+        //  filter kolomm ke 1
+        tabel.column(1).search(kategori,true,false,false).draw(false);
+       });
+     }) ;
+      
+
+      
+    </script>
+
+   
+
       <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
       <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
-      <script>
+    
+      <!-- <script>
           $(document).ready(function(){
               $(".check").click(function(){
                   $("#ceklis").prop("checked", true);
@@ -637,7 +668,7 @@
                   $("#ceklis").prop("checked", false);
               });
           });
-        </script>
+        </script> -->
   
   
   </body>
